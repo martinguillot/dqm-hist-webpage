@@ -1,0 +1,477 @@
+# Collections sizes
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_recEleNum
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_recCoreNum
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_recTrackNum
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_recOfflineVertices
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_recSeedNum
+
+# Basic electron quantities
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_charge
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexPt
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexEta
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexPhi
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexP
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexX
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexY
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexZ
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexTIP
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_Et
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_outerP_mode
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_outerPt_mode
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexPtVsEta_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ecalEnergyError
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ecalEnergyError_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ecalEnergyError_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_combinedP4Error
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_combinedP4Error_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_combinedP4Error_endcaps
+
+# Comparison with MC truth (residuals)
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ChargeMnChargeTrue
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PoPtrue
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PoPtrue_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PoPtrue_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PoPtrue_golden_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PoPtrue_golden_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PoPtrue_showering_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PoPtrue_showering_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PtoPttrue
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PtoPttrue_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PtoPttrue_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtrue_barrel_new
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtrue_barrel_new_etagap
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtrue_barrel_new_phigap
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtrue_ebeegap_new
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtrue_endcaps_new
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtrue_endcaps_new_deegap
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtrueVsrecOfflineVertices_pfx
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtrueVsrecOfflineVertices_barrel_pfx
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtrueVsrecOfflineVertices_endcaps_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_bcl_EtotoEtrue
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_bcl_EtotoEtrue_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_bcl_EtotoEtrue_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EtaMnEtaTrue
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EtaMnEtaTrue_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EtaMnEtaTrue_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PhiMnPhiTrue
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PhiMnPhiTrue_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PhiMnPhiTrue_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PoPtrueVsEta_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PoPtrueVsPhi_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_EoEtruePfVsEg_pfy
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EtaMnEtaTrueVsEta_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PhiMnPhiTrueVsEta_pfx
+
+# Track-cluster matching observables
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoP
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoP_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoP_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoPout
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoPout_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoPout_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EeleOPout
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EeleOPout_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EeleOPout_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EseedOP
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EseedOP_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EseedOP_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaCl_propOut
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaCl_propOut_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaCl_propOut_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaEleCl_propOut
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaEleCl_propOut_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaEleCl_propOut_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaSc_propVtx
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaSc_propVtx_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaSc_propVtx_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiCl_propOut
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiCl_propOut_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiCl_propOut_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiEleCl_propOut
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiEleCl_propOut_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiEleCl_propOut_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiSc_propVtx
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiSc_propVtx_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiSc_propVtx_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoPVsEta_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoPoutVsEta_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EeleOPoutVsEta_pfx
+
+# Electron Cluster shapes
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoE
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoE_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoE_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoE_bc
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoE_bc_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoE_bc_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalDepth1OverEcalBc
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalDepth1OverEcalBc_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalDepth1OverEcalBc_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalDepth2OverEcalBc
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalDepth2OverEcalBc_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalDepth2OverEcalBc_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoE_fiducial
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_sigmaIetaIetaVsPt_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_sigietaieta
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_sigietaieta_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_sigietaieta_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_full5x5_sigietaieta
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_full5x5_sigietaieta_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_full5x5_sigietaieta_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_E1x5
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_E1x5_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_E1x5_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_E2x5max
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_E2x5max_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_E2x5max_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_E5x5
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_E5x5_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_E5x5_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoEVsEta_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_scl_ESFrac_endcaps
+
+# Electron track variables
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chi2
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chi2_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chi2_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_foundHits
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_foundHits_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_foundHits_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_lostHits
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_lostHits_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_lostHits_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ambiguousTracks
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chi2VsEta_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_foundHitsVsEta_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ambiguousTracksVsEta_pfx
+
+# Electron seeds
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedSubdet2
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedMask
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedMask_Bpix
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedMask_Fpix
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedMask_Tec
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDphi2
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDphi2_VsEta_pfx
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDphi2_VsPt_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDphi2Pos
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDphi2Pos_VsEta_pfx
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDphi2Pos_VsPt_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDrz2
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDrz2_VsEta_pfx
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDrz2_VsPt_pfx
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDrz2Pos
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDrz2Pos_VsEta_pfx
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_seedDrz2Pos_VsPt_pfx
+
+# Brem fraction and related distributions
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_PinMnPout_mode
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_fbrem
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_fbrem_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_fbrem_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_superclusterfbrem
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_superclusterfbrem_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_superclusterfbrem_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_classes
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_eta_goldenFrac
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_eta_golden
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_eta
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_eta_bbremFrac
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_eta_bbrem
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_eta
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_eta_showerFrac
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_eta_shower
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_eta
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_fbremvsEtamean
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_fbremvsEtamode
+
+# Isolation sums
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_tkSumPt_dr03
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_tkSumPt_dr03_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_tkSumPt_dr03_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ecalRecHitSumEt_dr03
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ecalRecHitSumEt_dr03_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ecalRecHitSumEt_dr03_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr03_depth1
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr03_depth1_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr03_depth1_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr03_depth2
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr03_depth2_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr03_depth2_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_tkSumPt_dr04
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_tkSumPt_dr04_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_tkSumPt_dr04_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ecalRecHitSumEt_dr04
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ecalRecHitSumEt_dr04_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ecalRecHitSumEt_dr04_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr04_depth1
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr04_depth1_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr04_depth1_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr04_depth2
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr04_depth2_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEt_dr04_depth2_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr03_depth1
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr03_depth1_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr03_depth1_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr03_depth2
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr03_depth2_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr03_depth2_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr04_depth1
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr04_depth1_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr04_depth1_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr04_depth2
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr04_depth2_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_hcalTowerSumEtBc_dr04_depth2_endcaps
+
+# Distributions for all reconstructed electrons (i.e. not requiring a match with mc truth)
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoverP_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EseedOP_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EoPout_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_EeleOPout_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_TIP_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaSc_propVtx_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiSc_propVtx_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dEtaCl_propOut_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_dPhiCl_propOut_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoE_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_HoE_bc_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_mee_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_mee_os
+
+# Charge mis-ID
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_absetaQmisid
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_AbsEta_matched_qmisid
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_AbsEta
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_etaQmisid
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Eta_matched_qmisid
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Eta
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ptQmisid
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Pt_matched_qmisid
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Pt
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_zQmisid
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Z_matched_qmisid
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Z
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chargeInfo
+
+# Provenance
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_provenance
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_provenance_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_provenance_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_mva
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_mva_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_mva_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_mva_isolated
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_mva_isolated_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_mva_isolated_endcaps
+
+# pflow variables
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chargedHadronIso
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chargedHadronIso_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chargedHadronIso_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_neutralHadronIso
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_neutralHadronIso_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_neutralHadronIso_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_photonIso
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_photonIso_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_photonIso_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chargedHadronRelativeIso
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chargedHadronRelativeIso_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_chargedHadronRelativeIso_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_neutralHadronRelativeIso
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_neutralHadronRelativeIso_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_neutralHadronRelativeIso_endcaps
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_photonRelativeIso
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_photonRelativeIso_barrel
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_photonRelativeIso_endcaps
+
+# Conversion rejection information
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_convFlags
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_convFlags_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_convDist
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_convDist_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_convDcot
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_convDcot_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_convRadius
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_convRadius_all
+
+# Reconstruction efficiency
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_absetaEff
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_AbsEta_matched
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_AbsEta
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_etaEff
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Eta_matched
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Eta
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ptEff
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Pt_matched
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Pt
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_phiEff
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Phi_matched
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Phi
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_zEff
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Z_matched
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Z
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_etaEff_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexEta_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Eta
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_ptEff_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_ele_vertexPt_all
+
+DQMData/Run 1/EgammaV/Run summary/ElectronMcSignalValidator/h_mc_Pt

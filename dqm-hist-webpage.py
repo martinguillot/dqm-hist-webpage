@@ -6,6 +6,8 @@ from matplotlib import rcParams
 from matplotlib import gridspec
 import os.path
 
+from website import Website
+
 rcParams['font.family'] = 'DejaVu Sans Mono'
 
 def to_precision(x,p):
@@ -131,81 +133,27 @@ def make_plot(tgt, ref, title_y=0., logscale=False, hist_type="TH1", adjust_top=
 
     return axis, axr
 
-def main(tgt_file, ref_file, spec_file, out_dir="plots"):
+def main(tgt_file, ref_file, spec_file, website_file="index.html", out_dir="plots", website_only=False, title="Validation", target_name="ABC", ref_name="XYZ"):
 
     tgt_hists = uproot.open(tgt_file)
     ref_hists = uproot.open(ref_file)
 
-    if not os.path.exists(out_dir):
+    if not website_only and not os.path.exists(out_dir):
         os.makedirs(out_dir)
 
     with open(spec_file, 'r') as f:
         specs = [l.strip() for l in f.readlines()]
 
-    class Webfile(object):
-
-        def __init__(self, filename):
-            self.f = open(filename,"w+")
-            self._in_row = False
-            self._hist_in_current_row = False
-
-        def start_section(self, name):
-            if self._in_row:
-                self._end_row()
-            self.f.write("<h2>{0}</h2>".format(name))
-            self._begin_row()
-
-        def newline(self):
-            if self._in_row and self._hist_in_current_row:
-                self._begin_row()
-
-        def _draw_uparrow(self):
-            self.f.write("""<tr valign="top">
-            <td>
-                <a href="index.html">
-                    <img width="18" height="18" border="0" align="middle" src="up.gif" alt="Top"/>
-                </a>
-            </td>
-            """)
-
-        def _begin_row(self):
-            if self._in_row:
-                self._end_row()
-            self._in_row = True
-            self._hist_in_current_row = False
-
-        def _end_row(self):
-            self.f.write("</tr></br>")
-            self._in_row = False
-
-        def add_hist(self, name, filename):
-            if not self._in_row:
-                self._begin_row()
-            if not self._hist_in_current_row:
-                self._draw_uparrow()
-            self.f.write("""
-            <td>
-                <a id="{0}" name="{0}"></a>
-                <a href="{1}">
-                    <img border="0" class="image" width="440" src="{1}">
-                </a>
-            </td>
-            """.format(name, filename))
-            self._hist_in_current_row = True
-
-        def close(self):
-            self.f.close()
-
-    webfile = Webfile("index.html")
+    website = Website(website_file, title=title, target_name=target_name, ref_name=ref_name)
 
     for h_name in specs:
 
         if h_name.startswith("#"):
-            webfile.start_section(h_name.replace("#", ""))
+            website.start_section(h_name.replace("#", ""))
             continue
 
         if h_name == "":
-            webfile.newline()
+            website.newline()
 
         if not h_name in tgt_hists:
             continue
@@ -213,22 +161,25 @@ def main(tgt_file, ref_file, spec_file, out_dir="plots"):
         short_name = os.path.basename(h_name)
         print("Drawing " + short_name)
 
-        # logscale = "ELE_LOGY" in str(tgt_hists[h_name]._fOption)
+        website.add_hist(short_name, os.path.join(out_dir, short_name)+".png")
 
-        # ref = ref_hists[h_name]
+        if website_only:
+            continue
 
-        # if "pfx" in h_name:
-            # plt.figure(figsize=(6.0,5.85))
-            # make_plot(tgt_hists[h_name], ref, title_y=1.25, logscale=logscale, hist_type="TProfile", adjust_top=0.80)
-        # else:
-            # plt.figure(figsize=(6.0,6.0))
-            # make_plot(tgt_hists[h_name], ref, title_y=1.36, logscale=logscale, hist_type="TH1", adjust_top=0.77)
-        # plt.savefig(os.path.join(out_dir, os.path.basename(short_name))+".png", dpi=150, bbox="tight")
-        # plt.close()
+        logscale = "ELE_LOGY" in str(tgt_hists[h_name]._fOption)
 
-        webfile.add_hist(short_name, os.path.join(out_dir, short_name)+".png")
+        ref = ref_hists[h_name]
 
-    webfile.close()
+        if "pfx" in h_name:
+            plt.figure(figsize=(6.0,5.85))
+            make_plot(tgt_hists[h_name], ref, title_y=1.25, logscale=logscale, hist_type="TProfile", adjust_top=0.80)
+        else:
+            plt.figure(figsize=(6.0,6.0))
+            make_plot(tgt_hists[h_name], ref, title_y=1.36, logscale=logscale, hist_type="TH1", adjust_top=0.77)
+        plt.savefig(os.path.join(out_dir, os.path.basename(short_name))+".png", dpi=150, bbox="tight")
+        plt.close()
+
+    website.close()
 
 if __name__ == "__main__":
 
@@ -237,7 +188,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('target', help='ROOT DQM file for target')
     parser.add_argument('reference', help='ROOT DQM file for reference')
-    parser.add_argument('specifications', help='text file with histogram specification')
-    parser.add_argument('--out', help='output directory (histos/ by default)', default="plots")
+    parser.add_argument('specification', help='text file with histogram specification')
+    parser.add_argument('--title', help='title of the validation website', default="Validation")
+    parser.add_argument('--target-title', help='title of the target datasest', default="target")
+    parser.add_argument('--reference-title', help='title of the reference dataset', default="reference")
+    parser.add_argument('--plot-directory', help='output directory (histos/ by default)', default="plots")
+    parser.add_argument('--website', help='path of the website HTML file', default="index.html")
+    parser.add_argument('--website-only', help='to generate webpage only', action="store_true")
     args = parser.parse_args()
-    main(args.target, args.reference, args.specifications, out_dir=args.out)
+
+    main(args.target, args.reference, args.specification, out_dir=args.plot_directory, website_only=args.website_only, website_file=args.website, title=args.title, target_name=args.target_title, ref_name=args.reference_title)
