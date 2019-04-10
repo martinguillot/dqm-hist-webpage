@@ -241,7 +241,7 @@ if __name__ == "__main__":
     parser.add_argument("--title", help="title of the validation website", default="Validation")
     parser.add_argument("--target-title", help="title of the target datasest", default="target")
     parser.add_argument("--reference-title", help="title of the reference dataset", default="reference")
-    parser.add_argument("--plot-directory", help="output directory (histos/ by default)", default="plots")
+    parser.add_argument("--plot-directory", help="output directory (./plots/ by default)", default="plots")
     parser.add_argument("--website", help="path of the website HTML file", default="index.html")
     parser.add_argument("--website-only", help="to generate webpage only", action="store_true")
     args = parser.parse_args()
