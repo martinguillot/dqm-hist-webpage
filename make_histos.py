@@ -1,4 +1,3 @@
-# import uproot_patched as uproot
 import uproot
 from uproot_exts import *
 import matplotlib.pyplot as plt
@@ -26,6 +25,7 @@ def to_precision(x,p):
     return "{0:.{prec}f}".format(x, prec=a)
 
 def format_title(title):
+    title = title.decode("utf-8")
     if title == "":
         return " "
     title = title.replace("transverse momentum", "p_T")
@@ -34,6 +34,7 @@ def format_title(title):
     title = title.replace("# ", "tmp1")
     title = title.replace("#", "")
     title = title.replace("tmp1", "# ")
+
     return title
 
 def format_math_title(title):
@@ -61,7 +62,7 @@ def create_TProfile_label(h1, label):
             to_precision(getMeanTH1(h1), 4).rjust(14),
             to_precision(getMeanTH1(h1, axis=2), 4).rjust(12))
 
-def construct_plot(tgt, ref, title_y=0., logscale=False, hist_type="TH1", adjust_top=0.):
+def make_plot(tgt, ref, title_y=0., logscale=False, hist_type="TH1", adjust_top=0.):
     gs = gridspec.GridSpec(2, 1, height_ratios=[3, 1])
     axis = plt.subplot(gs[0])
 
@@ -130,59 +131,113 @@ def construct_plot(tgt, ref, title_y=0., logscale=False, hist_type="TH1", adjust
 
     return axis, axr
 
-def main(tgt_file, ref_file, spec_file, mAOD=(False, False), out_dir=None):
+def main(tgt_file, ref_file, spec_file, out_dir="plots"):
 
-    if out_dir is None:
-        out_dir = "__".join(tgt_file.split("__")[1:3]) + "__vs__" + "__".join(ref_file.split("__")[1:3])
-
-    tgt_hists = uproot.open(tgt_file)['DQMData/Run 1/EgammaV/Run summary']
-    ref_hists = uproot.open(ref_file)['DQMData/Run 1/EgammaV/Run summary']
+    tgt_hists = uproot.open(tgt_file)
+    ref_hists = uproot.open(ref_file)
 
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
 
     with open(spec_file, 'r') as f:
-        specs = [l.strip().split() for l in f.readlines() if "h_" in l]
+        specs = [l.strip() for l in f.readlines()]
 
-    for s in specs:
-        h_name     = s[0]
-        h_name_ref = h_name
-        if not mAOD[0]:
-            h_name = h_name.replace("MiniAOD", "")
-        if not mAOD[1]:
-            h_name_ref = h_name_ref.replace("MiniAOD", "")
+    class Webfile(object):
 
-        if not "MiniAOD" in h_name and "recomp":
-            h_name = h_name.replace("_recomp", "")
+        def __init__(self, filename):
+            self.f = open(filename,"w+")
+            self._in_row = False
+            self._hist_in_current_row = False
 
-        if not "MiniAOD" in h_name_ref and "recomp":
-            h_name_ref = h_name_ref.replace("_recomp", "")
+        def start_section(self, name):
+            if self._in_row:
+                self._end_row()
+            self.f.write("<h2>{0}</h2>".format(name))
+            self._begin_row()
 
-        print("Drawing "+h_name)
-        logscale = "ELE_LOGY" in tgt_hists[h_name]._fOption
-        # ref = None
-        # if h_name_ref in ref_hists:
-        ref = ref_hists[h_name_ref]
-        if "pfx" in s[0]:
-            plt.figure(figsize=(6.0,5.85))
-            construct_plot(tgt_hists[h_name], ref, title_y=1.25, logscale=logscale, hist_type="TProfile", adjust_top=0.80)
-        else:
-            plt.figure(figsize=(6.0,6.0))
-            construct_plot(tgt_hists[h_name], ref, title_y=1.36, logscale=logscale, hist_type="TH1", adjust_top=0.77)
-        plt.savefig(os.path.join(out_dir, os.path.basename(h_name))+".png", dpi=150, bbox="tight")
-        plt.close()
+        def newline(self):
+            if self._in_row and self._hist_in_current_row:
+                self._begin_row()
+
+        def _draw_uparrow(self):
+            self.f.write("""<tr valign="top">
+            <td>
+                <a href="index.html">
+                    <img width="18" height="18" border="0" align="middle" src="up.gif" alt="Top"/>
+                </a>
+            </td>
+            """)
+
+        def _begin_row(self):
+            if self._in_row:
+                self._end_row()
+            self._in_row = True
+            self._hist_in_current_row = False
+
+        def _end_row(self):
+            self.f.write("</tr></br>")
+            self._in_row = False
+
+        def add_hist(self, name, filename):
+            if not self._in_row:
+                self._begin_row()
+            if not self._hist_in_current_row:
+                self._draw_uparrow()
+            self.f.write("""
+            <td>
+                <a id="{0}" name="{0}"></a>
+                <a href="{1}">
+                    <img border="0" class="image" width="440" src="{1}">
+                </a>
+            </td>
+            """.format(name, filename))
+            self._hist_in_current_row = True
+
+        def close(self):
+            self.f.close()
+
+    webfile = Webfile("index.html")
+
+    for h_name in specs:
+
+        if h_name.startswith("#"):
+            webfile.start_section(h_name.replace("#", ""))
+            continue
+
+        if h_name == "":
+            webfile.newline()
+
+        if not h_name in tgt_hists:
+            continue
+
+        short_name = os.path.basename(h_name)
+        print("Drawing " + short_name)
+
+        # logscale = "ELE_LOGY" in str(tgt_hists[h_name]._fOption)
+
+        # ref = ref_hists[h_name]
+
+        # if "pfx" in h_name:
+            # plt.figure(figsize=(6.0,5.85))
+            # make_plot(tgt_hists[h_name], ref, title_y=1.25, logscale=logscale, hist_type="TProfile", adjust_top=0.80)
+        # else:
+            # plt.figure(figsize=(6.0,6.0))
+            # make_plot(tgt_hists[h_name], ref, title_y=1.36, logscale=logscale, hist_type="TH1", adjust_top=0.77)
+        # plt.savefig(os.path.join(out_dir, os.path.basename(short_name))+".png", dpi=150, bbox="tight")
+        # plt.close()
+
+        webfile.add_hist(short_name, os.path.join(out_dir, short_name)+".png")
+
+    webfile.close()
 
 if __name__ == "__main__":
 
-    # execute only if run as a script
     import argparse
 
     parser = argparse.ArgumentParser()
     parser.add_argument('target', help='ROOT DQM file for target')
     parser.add_argument('reference', help='ROOT DQM file for reference')
     parser.add_argument('specifications', help='text file with histogram specification')
-    # parser.add_argument('--out', help='output directory (histos/ by default)', default="histos")
-    parser.add_argument('--mAOD', help='two flags to use miniAOD for target or reference (00 by default)', default="00")
+    parser.add_argument('--out', help='output directory (histos/ by default)', default="plots")
     args = parser.parse_args()
-    mAOD = (args.mAOD[0] != "0", args.mAOD[1] != "0")
-    main(args.target, args.reference, args.specifications, mAOD=mAOD, out_dir=None)
+    main(args.target, args.reference, args.specifications, out_dir=args.out)
