@@ -89,7 +89,7 @@ body {
             name, filename
         )
         self._hist_in_current_row = True
-        self.tableofcontents += '• <a href="#{0}">{0}</a> '.format(name)
+        self.tableofcontents += '- <a href="#{0}">{0}</a> '.format(name)
 
     def close(self):
         self.tableofcontents += "<br>"

@@ -1,5 +1,5 @@
-# Making a Webpage from DQM Histograms
-Code to dump histograms from DQM RelVal datasets on a webpage.
+# Webpages from DQM Histograms
+Script to dump histograms from DQM RelVal datasets on a webpage.
 
 ## Requirements
 
@@ -10,9 +10,7 @@ The following Python packages need to be installed on your system:
 * [uproot](https://github.com/scikit-hep/uproot)
 * [uproot-methods](https://github.com/scikit-hep/uproot-methods)
 
-All of them are avalable on the Python Package Index (PyPI) and can be installed with [pip](https://pypi.org/project/pip/).
-
-This script was only tested with Python 3.
+All of them are avalable on the Python Package Index (PyPI) and can be installed with [pip](https://pypi.org/project/pip/). All requirements are also available in the CMSSW environment.
 
 ## Installation
 
@@ -60,13 +58,19 @@ You can download example DQM files for [target](https://rembserj.web.cern.ch/rem
 ```bash
 python dqm-hist-webpage.py zee_target.root zee_reference.root specifications/electron_mc_signal_histos.txt 
 ```
-The histogram specification file is [included in tis repository](specifications).
+The histogram specification file is [included in this repository](specifications).
 
 You should now have a file `index.html` in your current directory, as well as a directory `plots/` where all the plots are stored. These are default names which can be changed by command line arguments.
 
 The website can be opened with a browser directly, or copied on a webserver together with the directory containing the plots.
 
-## The Specifications File
+If you want to produce the website again but already have the plots, use the `--website-only` argument to save some time.
+
+### Advice for LLR CMS group members
+
+Use the `/scratch` area on the `llruicms01` machine to do this work. Producing all plots will be 10 times faster than on `lxplus` thanks to the sweet [SSD](https://en.wikipedia.org/wiki/Solid-state_drive).
+
+## The Histogram Specification File
 
 Let's look at a few lines from the aforementioned histogram specification file:
 
@@ -88,3 +92,7 @@ This snippet showcases what can be specified:
 * section names starting with a "hashtag" (`#`) like in markdown
 * the location of the histogram in the DQM ROOT files
 * start a new row in the website tabular structure by inserting an empty line between histograms
+
+## Developer Notes
+
+This script was written in summer 2018, when uproot did not support TProfiles yet. Therefore, this script extends uproot with the file `uproot_exts.py` to implement the missing TProfile member functions. It could be possible that gets obsolete some day or that the code breaks, as uproot-methods might implement the TProfile functionality itself. As of April 2019, the custom implementations still work.
